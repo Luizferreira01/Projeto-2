@@ -1,0 +1,23 @@
+form {
+    margin-top: 40px;
+}
+
+.tabela {
+    display: none;
+}
+
+.contatos {
+    display: none;
+}
+
+input, button {
+    padding: 8px;
+    margin-bottom: 8px;
+    width: 100%;
+}
+
+button {
+    background-color: blue;
+    color: white;
+    border: none;
+}
