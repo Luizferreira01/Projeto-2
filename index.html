@@ -8,10 +8,29 @@
 </head>
 <body>
     <div class="agenda">
-        <div class="contatos">
+        <div id="contatos" class="contatos">
             <h1>Agenda De Contatos</h1>
-            <h1>Registrar</h1>
-            <form id="Form-adiciona">
+            <div id="tabela" class="tabela">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>contato</th>
+                            <th>numero</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>luiz felipe</td>
+                            <td>(00)00000-0000</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="registro">
+            <div id="adiciona" class="adiciona" ></div>
+            <h1>registrar</h1>
+            <form id="form">
                 <label for="nome">novo contato</label>
                 <input type="text" id="nome-Contato" placeholder="nome do contato" required/> </br>
                 
