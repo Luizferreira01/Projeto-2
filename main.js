@@ -4,21 +4,30 @@ const nome = document.getElementById('nomedocontato');
 const regristro = document.getElementById('camporegistrado');
 const erro = document.getElementById('campocomerro')
 
-function registrado (nome, numero){
+function registrarcampo(nome, numero){
     return nome = numero;
 }
 
 form.addEventListener('submit', function(e){
     e.preventDefault();
-  
-    let validarform = regristrado(nome.value,numero.value)
-    if(!validarform){
-    camporegistrado.style.display = 'block'
-    campocomerro.style.display = 'none'
-    } else {
-        campocomerro.style.display = 'none'
+
+    let validarForm = registrarcampo(numero.valueAsNumber, nome.valueAsNumber)
+    if(validarForm){
+        acerto.style.display = 'block';
+        numero.value='';
+        nome.value='';
     }
-    
+})
+
+numero.addEventListener('keyup', function(e){
+    let validarForm = registrarcampo(numero.valueAsNumber, nome.valueAsNumber)
+    if(!validarForm){
+        erro.style.display = 'block';
+        acerto.style.display = 'none';
+    } else{
+        erro.style.display = 'none';
+    }
+
 })
 
 let linhas = ' ';
