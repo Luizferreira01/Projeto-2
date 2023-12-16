@@ -21,3 +21,17 @@ button {
     color: white;
     border: none;
 }
+
+span {
+    display: none;
+}
+
+#campocorreto{
+    border-radius: 2px;
+    background-color: green;
+}
+
+#campocomerro{
+    border-radius: 2px;
+    background-color: red;
+}
